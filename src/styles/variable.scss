@@ -1,0 +1,28 @@
+@use "sass:math";
+
+//默认设计稿的宽度
+$designWidth: 750;
+
+//默认设计稿的高度 本项目中用不到
+$designHeight: 1624;
+
+//px转为vw的函数
+@function vw($px) {
+  @return math.div($px , $designWidth) * 100vw;
+}
+
+//px转为vh的函数 本项目中用不到
+@function vh($px) {
+  @return math.div($px , $designHeight) * 100vh;
+}
+
+$primary-color: #57C8FF;
+$green-color: #20FFBC;
+$green-color2: #39FF9C;
+$red-color: #FF5B60;
+$gray-color:#9BA6B1;
+$yellow-color:#FDD200;
+$yellow-color2:#F9C521;
+
+
+
